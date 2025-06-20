@@ -1,0 +1,68 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px 40px;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #ffd700;
+  outline: none;
+}
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  padding: 50px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #0077cc;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
