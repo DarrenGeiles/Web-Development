@@ -1,0 +1,11 @@
+// backend/routes/vendors.js
+const express = require('express');
+const router = express.Router();
+const auth = require('../config/auth');
+const vendorController = require('../controllers/vendorController');
+
+// Only logged-in vendors can view/add
+router.post('/add', auth('vendor'), vendorController.addVendor);
+router.get('/all', auth('vendor'), vendorController.getVendors);
+
+module.exports = router;
