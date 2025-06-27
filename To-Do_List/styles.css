@@ -1,0 +1,96 @@
+/* Center the whole app */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c3ecf7, #e8defa);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for to-do app */
+.todo-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* Input and Add button side by side */
+.input-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #4e73df;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #3a5fc4;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 0 5px;
+    border-radius: 6px;
+}
+
+/* Task list style */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Checkbox completed styling */
+li.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li label {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+li button {
+    background-color: crimson;
+    border-radius: 4px;
+}
